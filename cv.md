@@ -23,3 +23,20 @@
 - SCSS/SASS
 - Javascript
 - GIT
+
+## 5. EXAMPLE for CODE:
+
+```
+'use strict';
+	const tabsContent = document.querySelectorAll('.tabcontent'),
+		tabs = document.querySelectorAll('tabheader__item'),
+		tabsParent = document.querySelector('.tabheader__items');
+	function hideTabContent() {
+		tabsContent.forEach((item) => {
+			item.style.display = 'display: none';
+		});
+		tabs.forEach((item) => {
+			item.classList.contains('tabheader__item-active').remove();
+		});
+	}
+```
