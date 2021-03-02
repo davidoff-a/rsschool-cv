@@ -15,3 +15,11 @@
 
 > Life is short. I want to do a lot of things.  
 > Programming is one of them.
+
+## 4. SKILLS:
+
+- HTML5
+- CSS3
+- SCSS/SASS
+- Javascript
+- GIT
