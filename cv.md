@@ -58,3 +58,7 @@
 | **Online courses:**                                                                    |           |                                                                                                                               |
 | SoloLearn.com                                                                          |   2020    | [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |
 | Udemy.com                                                                              |   2021    | [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/) |
+
+## 8. LANGUAGE:
+
+English A2
