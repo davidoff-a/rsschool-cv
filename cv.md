@@ -10,3 +10,8 @@
 | **_Skype:_**   | _pastor_ni_                  |
 | **_Mobile:_**  | _+375293472556_              |
 | **_Telegram_** | _+375293472556_              |
+
+## 3. ABOUT:
+
+> Life is short. I want to do a lot of things.  
+> Programming is one of them.
