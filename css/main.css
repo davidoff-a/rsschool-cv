@@ -1,0 +1,230 @@
+/* обнуляем стили браузеров
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+/* a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+*/
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* объявляем переменные */
+:root {
+  --main-bg-color: #2c323d;
+  --main-txt-color: #555555;
+  --circle-inactive-light: #d7d7d7;
+  --circle-inactive-dark: #595f6b;
+  --circle-active-light: #fff;
+
+}
+
+*,
+body {
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1140px;
+}
+
+aside {
+  width: 380px;
+  min-height: 1400px;
+  padding: 125px 80px 80px 80px;
+  color: #ffffff;
+  background-color: var(--main-bg-color);
+}
+
+main {
+  width: 760px;
+  min-height: 1400px;
+  padding: 125px 80px 80px 80px;
+  color: var(--main-txt-color);
+  font-weight: 400;
+  background-color: var(--circle-inactive-light);
+}
+main .main_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+main ol{
+  padding-left: 20px;
+  margin: 0;
+}
+main ol li{
+  margin: 0;
+}
+h1 {
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #363636;
+}
+
+h2 {
+  font-size: 74px;
+  line-height: 78px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.dark_link {
+  color: var(--main-bg-color);
+}
+
+.junior__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+section {
+  min-height: 100px;
+  margin-top: 90px;
+}
+
+section h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+}
+
+section .divider {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 60px;
+  height: 3px;
+}
+
+section .divider.light {
+  background-color: #fff;
+}
+
+section .divider.dark {
+  background-color: var(--main-bg-color);
+}
+
+section .section__item {
+  margin-top: 15px;
+}
+
+.skills-set{
+  display: grid;
+  grid-template: repeat(2, 25px)/220px;
+  row-gap: 20px;
+}
+.skills-set .skills-set__item {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-set .skills-set__item .skills-set__title {
+  font-weight: 500;
+}
+.skills-set .skills-set__item .skills-set__indicator {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-set .skills-set__indicator .circle {
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+
+.skills-set .skills-set__indicator .circle.full_dark,
+.skills-set .skills-set__indicator .circle.empty_light {
+  background-color: var(--circle-active-light);
+}
+
+.skills-set .skills-set__indicator .circle.empty_dark {
+  background-color: var(--main-txt-color);
+}
+
+.skills-set .skills-set__indicator .circle.full_light {
+  background-color: var(--main-bg-color);
+}
