@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,10 +9,13 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<title>HTML, CSS & Git Basics</title>
 </head>
+
 <body>
 	<div class="container">
 		<aside>
-			<div class="junior__photo"></div>
+			<div class="junior__photo">
+				<img src="img/photo.jpg" alt="my_photo">
+			</div>
 			<section>
 				<h3>Contact</h3>
 				<div class="divider light"></div>
@@ -74,33 +78,37 @@
 				<h1>junior
 					<br>FrontEnd Developer</h1>
 			</div>
-			<section>
-				<h3>About</h3>
-				<div class="divider dark"></div>
-				<div class="section__item">
-					<blockquote>
-						Life is short. I want to do a lot of things. <br>
-						Programming is one of them.
-					</blockquote>
-				</div>
-			</section>
-			<section>
-				<h3>Experience</h3>
-				<div class="divider dark"></div>
-				<div class="section__item">
-					<a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/" class="dark_link">Udemy
-						Web-developer
-						2021</a>
-				</div>
-				<div class="section__item">
-					<a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
-				</div>
+			<div class="main_wrapper">
+				<section>
+					<h3>About</h3>
+					<div class="divider dark"></div>
+					<div class="section__item">
+						<blockquote>
+							Life is short. I want to do a lot of things. <br>
+							Programming is one of them.
+						</blockquote>
+					</div>
 				</section>
 				<section>
-					<h3>Example for code</h3>
-					<div class="section__item">
-						<code>
-							<pre>
+					<h3>Experience</h3>
+					<div class="divider dark"></div>
+					<ol>
+						<li class="section__item">
+							<a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/" class="dark_link">Udemy
+								Web-developer
+								2021</a>
+						</li>
+						<li class="section__item">
+							<a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
+						</li>
+					</ol>
+				</section>
+			</div>
+			<section>
+				<h3>Example for code</h3>
+				<div class="section__item">
+					<code>
+						<pre>
 'use strict';<br>
 	const tabsContent = document.querySelectorAll('.tabcontent'),<br>
 	tabs = document.querySelectorAll('tabheader__item'),<br>
@@ -114,32 +122,57 @@
 		});<br>
 	}
 								</pre>
-						</code>
-					</div>
+					</code>
+				</div>
 			</section>
 			<section>
 				<h3>Skills</h3>
 				<div class="divider dark"></div>
-				<div class="skills-set">
-					<div class="skills-set__item">
-						<div class="skills-set__title">HTML5</div>
-						<div class="skills-set__indicator"></div>
+				<div class="main_wrapper">
+					<div class="skills-set">
+						<div class="skills-set__item">
+							<div class="skills-set__title">HTML5</div>
+							<div class="skills-set__indicator">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="skills-set__item">
+							<div class="skills-set__title">CSS3</div>
+							<div class="skills-set__indicator">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
 					</div>
-					<div class="skills-set__item">
-						<div class="skills-set__title">CSS3</div>
-						<div class="skills-set__indicator"></div>
-					</div>
-					<div class="skills-set__item">
-						<div class="skills-set__title">JavaScript</div>
-						<div class="skills-set__indicator"></div>
-					</div>
-					<div class="skills-set__item">
-						<div class="skills-set__title">GIT</div>
-						<div class="skills-set__indicator"></div>
+					<div class="skills-set">
+						<div class="skills-set__item">
+							<div class="skills-set__title">JavaScript</div>
+							<div class="skills-set__indicator">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="skills-set__item">
+							<div class="skills-set__title">GIT</div>
+							<div class="skills-set__indicator">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 	</div>
 </body>
+
 </html>
