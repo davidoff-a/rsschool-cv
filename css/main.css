@@ -1,85 +1,179 @@
-/* poppins-300 - latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/poppins-v15-latin-300.eot');
-  /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/poppins-v15-latin-300.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/poppins-v15-latin-300.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/poppins-v15-latin-300.woff') format('woff'),
-    /* Modern Browsers */
-    url('../fonts/poppins-v15-latin-300.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/poppins-v15-latin-300.svg#Poppins') format('svg');
-  /* Legacy iOS */
+/* обнуляем стили браузеров
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* poppins-regular - latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/poppins-v15-latin-regular.eot');
-  /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/poppins-v15-latin-regular.woff') format('woff'),
-    /* Modern Browsers */
-    url('../fonts/poppins-v15-latin-regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/poppins-v15-latin-regular.svg#Poppins') format('svg');
-  /* Legacy iOS */
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-/* poppins-500 - latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/poppins-v15-latin-500.eot');
-  /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/poppins-v15-latin-500.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/poppins-v15-latin-500.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/poppins-v15-latin-500.woff') format('woff'),
-    /* Modern Browsers */
-    url('../fonts/poppins-v15-latin-500.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/poppins-v15-latin-500.svg#Poppins') format('svg');
-  /* Legacy iOS */
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-/* poppins-600 - latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/poppins-v15-latin-600.eot');
-  /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/poppins-v15-latin-600.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/poppins-v15-latin-600.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/poppins-v15-latin-600.woff') format('woff'),
-    /* Modern Browsers */
-    url('../fonts/poppins-v15-latin-600.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/poppins-v15-latin-600.svg#Poppins') format('svg');
-  /* Legacy iOS */
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* объявляем переменные */
+:root {
+  --main-bg-color: #2c323d;
+  --main-txt-color: #555555;
+  --circle-inactive-light: #d7d7d7;
+  --circle-inactive-dark: #595f6b;
+
+}
+
+*,
+body {
+  font-family: Poppins;
+  font-size: 14px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1140px;
+  display: flex;
+  }
 
+  aside {
+    width: 380px;
+    min-height: 1400px;
+    padding: 125px 80px 0px 80px;
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+  }
+
+  main {
+    width: 760px;
+    height: 100vh;
+    padding: 125px 80px 0px 80px;
+    background-color: var(--circle-inactive-light);
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #363636;
+  }
+
+  h2 {
+    font-size: 74px;
+    line-height: 78px;
+  }
+
+  h3 {}
+
+  h4 {}
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a.dark_link {
+    color: var(--main-bg-color);
+  }
+
+  .junior__photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+
+  section {
+    min-height: 100px;
+    margin-top: 90px;
+  }
+
+  section h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+  }
+
+  section .divider {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 60px;
+    height: 3px;
+  }
+
+  section .divider.light {
+    background-color: #fff;
+  }
+
+  section .divider.dark {
+    background-color: var(--main-bg-color);
+  }
+
+  section .section__item {
+    margin-top: 15px;
 }

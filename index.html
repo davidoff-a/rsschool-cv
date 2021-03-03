@@ -1,51 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main.css" />
-		<title>HTML, CSS & Git Basics</title>
-	</head>
-	<body>
-		<div class="container">
-			<aside>
-				<div class="photo_employee"></div>
-				<section>
-					<h3>Contact</h3>
-					<div class="divider"></div>
-          <div class="junior__phone"></div>
-          <div class="junior__email"></div>
-          <div class="junior__address"></div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>HTML, CSS & Git Basics</title>
+</head>
+<body>
+	<div class="container">
+		<aside>
+			<div class="junior__photo"></div>
+			<section>
+				<h3>Contact</h3>
+				<div class="divider light"></div>
+				<div class="section__item">
+					Phone <br>
+					<a href="tel: 375293472556">+375 (29) 347 25 56</a>
+				</div>
+				<div class="section__item">
+					Email <br>
+					<a href="email:davidoff.aleksei@gmail.com">davidoff.aleksei@gmail.com</a>
+				</div>
+				<div class="section__item">
+					Skype <br>
+					<a href="skype:pastor_ni">pastor_ni</a>
+				</div>
+			</section>
+			<section>
+				<h3>Education</h3>
+				<div class="divider light"></div>
+				<div class="section__item">
+					2021 <br>
+					WEB-developer 2021 <br>
+					<a href="udemy.com">Udemy.com</a>
+				</div>
+				<div class="section__item">
+					2020 <br>
+					HTML <br>
+					<a href="SoloLearn.com">SoloLearn.com</a>
+				</div>
+				<div class="section__item">
+					2007 <br>
+					Software ingeneer <br>
+					RIIT BNTU
+				</div>
+				<div class="section__item">
+					2007 <br>
+					Computer science teacher <br>
+					<a href="https://barsu.by/">BarSU</a>
+				</div>
+				<div class="section__item">
+					1999-2004 <br>
+					Economist <br>
+					<a href="http://www.bntu.by/">BNTU</a>
+				</div>
+			</section>
+			<section>
+				<h3>Language</h3>
+				<div class="divider light"></div>
+				<div class="section__item">
+					English - A2
+				</div>
+				<div class="section__item">
+					Russian - Native speaker
+				</div>
+			</section>
+		</aside>
+		<main>
+			<div class="name_employee">
+				<h2>Aliaksei Davydau</h2>
+				<h1>junior
+					<br>FrontEnd Developer</h1>
+			</div>
+			<section>
+				<h3>About</h3>
+				<div class="divider dark"></div>
+				<div class="section__item">
+					<blockquote>
+						Life is short. I want to do a lot of things. <br>
+						Programming is one of them.
+					</blockquote>
+				</div>
+			</section>
+			<section>
+				<h3>Experience</h3>
+				<div class="divider dark"></div>
+				<div class="section__item">
+					<a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/" class="dark_link">Udemy
+						Web-developer
+						2021</a>
+				</div>
+				<div class="section__item">
+					<a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
+				</div>
 				</section>
 				<section>
-					<h3>Education</h3>
-					<div class="divider"></div>
-				</section>
-				<section>
-					<h3>Language</h3>
-					<div class="divider"></div>
-				</section>
-			</aside>
-			<main>
-				<div class="name_employee">
-          <h2>Aliaksei Davidau</h2>
-          <h1>junior FrontEnd Developer</h1>
-
-        </div>
-				<section>
-					<h3>Profile</h3>
-					<div class="divider"></div>
-				</section>
-				<section>
-					<h3>Experience</h3>
-					<div class="divider"></div>
-				</section>
-				<section>
-					<h3>Skills</h3>
-					<div class="divider"></div>
-				</section>
-			</main>
-		</div>
-	</body>
+					<h3>Example for code</h3>
+					<div class="section__item">
+						<code>
+							<pre>
+'use strict';<br>
+	const tabsContent = document.querySelectorAll('.tabcontent'),<br>
+	tabs = document.querySelectorAll('tabheader__item'),<br>
+	tabsParent = document.querySelector('.tabheader__items');<br>
+	function hideTabContent() {<br>
+		tabsContent.forEach((item) => {<br>
+			item.style.display = 'display: none';<br>
+		});<br>
+		tabs.forEach((item) => {<br>
+			item.classList.contains('tabheader__item-active').remove();<br>
+		});<br>
+	}
+								</pre>
+						</code>
+					</div>
+			</section>
+			<section>
+				<h3>Skills</h3>
+				<div class="divider dark"></div>
+				<div class="skills-set">
+					<div class="skills-set__item">
+						<div class="skills-set__title">HTML5</div>
+						<div class="skills-set__indicator"></div>
+					</div>
+					<div class="skills-set__item">
+						<div class="skills-set__title">CSS3</div>
+						<div class="skills-set__indicator"></div>
+					</div>
+					<div class="skills-set__item">
+						<div class="skills-set__title">JavaScript</div>
+						<div class="skills-set__indicator"></div>
+					</div>
+					<div class="skills-set__item">
+						<div class="skills-set__title">GIT</div>
+						<div class="skills-set__indicator"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
 </html>
