@@ -113,6 +113,8 @@ main {
   min-height: 1400px;
   padding: 125px 80px 0px 80px;
   background-color: var(--circle-inactive-light);
+  color: var(--main-txt-color);
+  font-weight: 400;
 }
 main .main_wrapper{
   display: flex;
@@ -195,6 +197,9 @@ section .section__item {
 .skills-set .skills-set__item{
   display: flex;
   justify-content: space-between;
+}
+.skills-set .skills-set__item .skills-set__title {
+  font-weight: 500;
 }
 .skills-set .skills-set__item .skills-set__indicator {
   width: 80px;
