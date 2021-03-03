@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -39,7 +39,7 @@
 				<div class="divider light"></div>
 				<ul>
 					<li class="section__item">
-						2021 <br>
+					  2021 <br>
 						WEB-developer 2021 <br>
 						<a href="udemy.com">Udemy.com</a>
 					</li>
@@ -125,23 +125,22 @@
 			<section>
 				<h3>Example for code</h3>
 				<div class="section__item">
-					<code>
+					<pre>
 						
-'use strict';<br>
-	const tabsContent = document.querySelectorAll('.tabcontent'),<br>
-	tabs = document.querySelectorAll('tabheader__item'),<br>
-	tabsParent = document.querySelector('.tabheader__items');<br>
+"use strict";<br>
+	const tabsContent = document.querySelectorAll(".tabcontent"),<br>
+	tabs = document.querySelectorAll("tabheader__item"),<br>
+	tabsParent = document.querySelector(".tabheader__items");<br>
 	function hideTabContent() {<br>
 		tabsContent.forEach((item) => {<br>
-			item.style.display = 'display: none';<br>
+			item.style.display = "display: none";<br>
 		});<br>
 		tabs.forEach((item) => {<br>
-			item.classList.contains('tabheader__item-active').remove();<br>
-		}
-		);<br>
+			item.classList.contains("tabheader__item-active").remove();<br>
+		});<br>
 	}
 								
-					</code>
+					</pre>
 				</div>
 			</section>
 			<section>
