@@ -53,7 +53,7 @@ export interface IComponent {
 
 - [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)
 - [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/)
-- [SoloLearn Javascript](https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png) 
+- [SoloLearn Javascript](https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png)
 
 ## 7. EDUCATION HIGHLIGHTS:
 
@@ -67,6 +67,7 @@ export interface IComponent {
 | **Online courses:**                                                                    |           |                                                                                                                               |
 | SoloLearn.com                                                                          |   2020    | [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |
 | Udemy.com                                                                              |   2021    | [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/) |
+| SoloLearn.com                                                                          |   2021    | [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |
 
 ## 8. LANGUAGE:
 
