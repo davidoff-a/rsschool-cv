@@ -45,6 +45,7 @@
 
 - [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)
 - [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/)
+- [SoloLearn Javascript](https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png) 
 
 ## 7. EDUCATION HIGHLIGHTS:
 
