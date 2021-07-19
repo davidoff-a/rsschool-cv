@@ -27,18 +27,26 @@
 ## 5. EXAMPLE for CODE:
 
 ```
-'use strict';
-	const tabsContent = document.querySelectorAll('.tabcontent'),
-		tabs = document.querySelectorAll('tabheader__item'),
-		tabsParent = document.querySelector('.tabheader__items');
-	function hideTabContent() {
-		tabsContent.forEach((item) => {
-			item.style.display = 'display: none';
-		});
-		tabs.forEach((item) => {
-			item.classList.contains('tabheader__item-active').remove();
-		});
-	}
+export class Component implements IComponent{
+  selector: string;
+  template: string;
+  constructor(config:IComponent){
+    this.selector = config.selector;
+    this.template = config.template;
+  }
+  render():void{
+    const pageComponent = document.querySelector(this.selector);
+    if(this.selector && pageComponent){
+      pageComponent.innerHTML = this.template;
+    }
+  }
+}
+
+export interface IComponent {
+  selector: string,
+  template: string,
+}
+
 ```
 
 ## 6. EXPIRIENCE:
