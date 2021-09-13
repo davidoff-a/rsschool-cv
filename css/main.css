@@ -41,7 +41,7 @@ body {
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
-  list-style: none;
+  list-style-type: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
@@ -78,6 +78,72 @@ select {
   }
 }
 
+/* hepta-slab-regular - latin */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/hepta-slab-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/hepta-slab-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/hepta-slab-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/hepta-slab-v9-latin-regular.svg#HeptaSlab') format('svg'); /* Legacy iOS */
+}
+/* hepta-slab-700 - latin */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/hepta-slab-v9-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/hepta-slab-v9-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/hepta-slab-v9-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/hepta-slab-v9-latin-700.svg#HeptaSlab') format('svg'); /* Legacy iOS */
+}
+/* hepta-slab-800 - latin */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/hepta-slab-v9-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/hepta-slab-v9-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/hepta-slab-v9-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/hepta-slab-v9-latin-800.svg#HeptaSlab') format('svg'); /* Legacy iOS */
+}
+/* hepta-slab-600 - latin */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/hepta-slab-v9-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/hepta-slab-v9-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/hepta-slab-v9-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/hepta-slab-v9-latin-600.svg#HeptaSlab') format('svg'); /* Legacy iOS */
+}
+/* hepta-slab-900 - latin */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/hepta-slab-v9-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/hepta-slab-v9-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/hepta-slab-v9-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/hepta-slab-v9-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/hepta-slab-v9-latin-900.svg#HeptaSlab') format('svg'); /* Legacy iOS */
+}
+
 /* объявляем переменные */
 :root {
   --main-bg-color: #2c323d;
@@ -92,29 +158,107 @@ select {
 body {
   font-family: Poppins;
   font-size: 14px;
+  background: url("../img/cv-bg.jpg") top center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+}
+.header{
+  height: 100vh;
+  
+}
+
+.logo-block{
+  position: fixed;
+  top: 150px;
+  left: 600px;
+  
+}
+
+.logo, .logo>span{
+  font-family: 'Hepta Slab', sans-serif;
+  color:#d80101;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 85px;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 0 #2c323d;
+  
+}
+
+.logo>span{
+  padding-left: 55px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
-  display: flex;
+  max-width: 1400px;
 }
 
-aside {
+.container.container_relative{
+  position: relative;
+}
+
+.container.container_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav{
+  margin-top: 25px;
+  
+}
+.nav-menu{
+  height: 25px;
+  background:#2c323d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.nav-menu>li{
+  
+  border-bottom: 2px solid rgba(44, 50, 61, 1);
+}
+
+.nav-menu>li:hover{
+  border-bottom:2px solid rgba(120, 255, 255, 1);
+}
+
+.nav-menu>li>a{
+  background:#2c323d;
+}
+
+
+/* aside {
   width: 380px;
-  min-height: 1400px;
+  min-height: 1500px;
   padding: 125px 80px 0px 80px;
   background-color: var(--main-bg-color);
   color: #ffffff;
-}
+} */
 
 main {
-  width: 760px;
-  min-height: 1400px;
+  /* width: 760px;
+  min-height: 1500px; */
   padding: 125px 80px 0px 80px;
-  background-color: var(--circle-inactive-light);
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: var(--circle-inactive-light); */
 }
-main .main_wrapper{
+
+section{
+  width: 30%;
+}
+/* main .main_wrapper{
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -133,17 +277,14 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.1em;
   color: #363636;
-}
+} */
 
-h2 {
+/* h2 {
   font-size: 74px;
   line-height: 78px;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+
 
 a.dark_link {
   color: var(--main-bg-color);
@@ -220,4 +361,4 @@ section .section__item {
 
 .skills-set .skills-set__indicator .circle.full_light {
   background-color: var(--main-bg-color);
-}
+} */
