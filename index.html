@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,139 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Curriculum Vitae</title>
-  
+
 </head>
+
 <body>
   <div class="content">
     <header class="header block">
       <div class="header-logo logo">
         <div class="logo__logo">CV</div>
-        <div class="logo__text logo__text_upper">urriculum</div>
-        <div class="logo__text logo__text_lower">itae</div>
+        <div class="logo-wrapper">
+          <div class="logo__text logo__text_upper">urriculum</div>
+          <div class="logo__text logo__text_lower">itae</div>
+        </div>
+      </div>
+      <div class="menu-wrapper">
+        <div class="cv-name">Davydau Aliaksei</div>
+        <nav class="nav">
+          <ul class="nav-menu menu">
+            <li class="menu__item"><a href="#about">About</a></li>
+            <li class="menu__item"><a href="#exp">Experience</a></li>
+            <li class="menu__item"><a href="#skills">Skills</a></li>
+            <li class="menu__item"><a href="#edu">Education</a></li>
+            <li class="menu__item"><a href="#lang">Languages</a></li>
+            <li class="menu__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="burger hide">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </header>
     <div class="content-wrapper">
-      <aside class="sidebar block">I'm content on left side</aside>
+      <aside class="sidebar block">
+        <div class="cv-photo">
+          <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo"></div>
+        <section class="about">
+          <h2>About</h2>
+          <div class="about__text">
+            Life is short. So I want to try so many thing as I can.
+            Programming is one of them. Because I see it like a Star Gate to the new World of Opportunities and GREAT deals. I dream to become a part of Something really big
+          </div>
+        </section>
+        <section class="contacts">
+          <h2>Contacts</h2>
+          <div class="contacts__content">
+            <ul class="contacts__list">
+              <li class="contacts__item">Phone
+                <a href="callto:375293472556">+375 (29) 347 25 56</a>
+              </li>
+              <li class="contacts__item">Email: <a
+                  href="mailto:davidoff.aleksei@gmail.com">davidoff.aleksei@gmail.com</a></li>
+              <li class="contacts__item">Skype: <a href="skype:pastor_ni">pastor_ni</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="skills">
+          <h2>Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <div class="skills__name">HTML5</div>
+              <div class="skills__box">
+                <div class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__name">CSS3</div>
+              <div class="skills__box">
+                <div class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__name">JavaScript</div>
+              <div class="skills__box">
+                <div class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__name">GIT</div>
+              <div class="skills__box">
+                <div class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__name">TypeScript</div>
+              <div class="skills__box">
+                <div class="skills__progress"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="lang">
+          <h2 class="lang">Languages</h2>
+          <ul class="lang__list">
+            <li class="lang__item">
+              <div class="lang__name">
+                English
+              </div>
+              <div class="lang__box">
+                <div class="lang__progress">
+
+                </div>
+              </div>
+            </li>
+            <li class="lang__item">
+              <div class="lang__name">
+                Russian
+              </div>
+              <div class="lang__box">
+                <div class="lang__progress">
+            
+                </div>
+              </div>
+            </li>
+            <li class="lang__item">
+              <div class="lang__name">
+                Belorussian
+              </div>
+              <div class="lang__box">
+                <div class="lang__progress">
+            
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </section>
+      </aside>
       <main class="main block">I'm content on right side</main>
     </div>
-    <footer class="footer block">I'm footer</footer>
+    <!-- 
+    <footer class="footer block">I'm footer</footer> -->
   </div>
 </body>
+
 </html>
