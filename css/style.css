@@ -3,10 +3,23 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul{
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   background-color: rgba(162, 89, 255, 0.6);
-  padding: 50px;
-  height: 100vh;
+  padding: 35px;
+  min-height: 100vh;
 }
 
 .content {
@@ -14,12 +27,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(rgba(3, 56, 244, 0.71), rgba(224, 37, 206, 0.79));
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  min-width: 320px;
   box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.block{
+.block {
   background: rgba(196, 196, 196, 0.3);
   border-radius: 5px;
 }
@@ -31,6 +45,158 @@ body {
   flex: 0 0 104px;
   margin: 10px 15px;
 }
+/*----------------LOGO------------------ */
+.header-logo {
+  position: relative;
+  flex: 0 0 15%;
+  padding: 15px;
+  min-width: 250px;
+}
+.logo-wrapper {
+  position: absolute;
+  top: 55px;
+  left: 120px;
+  text-align: right;
+}
+.logo__logo {
+  text-align: center;
+  font-size: 96px;
+  font-weight: 900;
+  font-family: Montserrat;
+  letter-spacing: -15px;
+  color: rgba(112, 168, 134, 0.8);
+  text-shadow: -5px 5px 10px rgba(56, 56, 56, 0.6);
+}
+
+.logo__text {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: bold;
+  text-shadow: -5px 5px 5px rgba(56, 56, 56, 0.6);
+}
+/*----------------MENU----------------- */
+.menu-wrapper {
+  flex: 1 1 85%;
+}
+.cv-name {
+  font-size: 72px;
+  font-family: Montserrat;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  width: 90px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu__item:hover {
+  border-bottom: rgba(56, 56, 56, 1);
+  background-color: rgba(196, 196, 196, 0.6);
+  transition: all 0.6s;
+}
+.burger {
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  height: 5px;
+  width: 100%;
+  background-color: #000;
+}
+@media (max-width: 850px) {
+  .cv-name {
+    font-size: 36px;
+  }
+  .nav {
+    top: 38%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 23%;
+    /* right: 10%; */
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-end;
+
+    /* display:none; */
+    /*   
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; */
+    flex-wrap: nowrap;
+  }
+  .menu__item {
+    background-color: rgba(196, 196, 196, 0.6);
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-logo {
+    padding: 0;
+  }
+  .logo-wrapper {
+    top: 42px;
+    left: 106px;
+  }
+  .cv-name {
+    margin: 20px 0 10px 0;
+  }
+
+  .burger {
+    margin: 10px 0 20px 0;
+  }
+
+  .nav{
+    top: 36%;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    padding: 0;
+  }
+  .content {
+    flex: 1 1 320px;
+  }
+  .menu {
+    top: 36%;
+  }
+}
+/* ------------CONTENT----------------------- */
 .content-wrapper {
   flex: 1 1 auto;
   display: flex;
@@ -41,9 +207,44 @@ body {
 .sidebar {
   flex: 0 0 15%;
   min-width: 250px;
-  margin: 10px 15px;
+  margin: 15px 15px;
   height: 100%;
+  padding: 10px;
 }
+
+.cv-photo{
+  margin: 0 0 10px 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.photo{
+  width: 230px;
+  height: 230px;
+}
+
+h2{
+  font-size: 24px;
+  margin: 5px 0 15px 0;
+  position: relative;
+}
+
+h2::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 55px;
+  height: 3px;
+  background-color: #040404;
+}
+
+.contacts__item{
+  margin-bottom: 12px;
+}
+
 .main {
   flex: 1 1 85%;
   margin: 10px 15px;
@@ -54,3 +255,7 @@ body {
   flex: 0 0 104px;
   margin: 10px 15px;
 }
+
+/* .hide{
+  display: none;
+} */
