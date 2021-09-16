@@ -225,9 +225,14 @@ body {
   height: 230px;
 }
 
+.about__text{
+  line-height: 140%;
+  font-size: 18px;
+}
+
 h2{
   font-size: 24px;
-  margin: 5px 0 15px 0;
+  margin: 15px 0 25px 0;
   position: relative;
 }
 
@@ -241,8 +246,44 @@ h2::before{
   background-color: #040404;
 }
 
-.contacts__item{
+.contacts__item, .skills__item, .lang__item{
   margin-bottom: 12px;
+}
+
+.skills__box, .lang__box{
+  width: 80%;
+  height: 6px;
+  margin-top: 8px;
+  background-color:rgba(196,196,196,0.8);
+}
+
+.skills__progress, .lang__progress{
+  height: 100%;
+  background-color: rgb(29, 40, 194);
+}
+#HTML{
+  width: 90%;
+}
+#CSS{
+  width: 85%;
+}
+#JS{
+  width: 75%;
+}
+#GIT{
+  width: 45%;
+}
+#TS{
+  width: 30%;
+}
+#eng{
+  width: 40%;
+}
+#rus{
+  width: 90%;
+}
+#by{
+  width: 85%;
 }
 
 .main {
