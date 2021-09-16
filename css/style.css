@@ -201,13 +201,13 @@ body {
   flex: 1 1 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .sidebar {
   flex: 0 0 15%;
   min-width: 250px;
-  margin: 15px 15px;
+  margin: 10px 15px;
   height: 100%;
   padding: 10px;
 }
@@ -241,7 +241,7 @@ h2::before{
   position: absolute;
   top: 30px;
   left: 0;
-  width: 55px;
+  width: 45px;
   height: 3px;
   background-color: #040404;
 }
@@ -290,6 +290,7 @@ h2::before{
   flex: 1 1 85%;
   margin: 10px 15px;
   height: 100%;
+  padding: 10px;
 }
 .footer {
   /* min-height: 100px; */
