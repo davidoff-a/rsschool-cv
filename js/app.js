@@ -11,7 +11,12 @@ burger.addEventListener("click", ()=>{
 })
 
 menu.addEventListener("click", (event)=>{
-if (event.target&&!event.target.classList.contains("nav")){
+if (
+  event.target &&
+  (event.target.classList.contains("layer") ||
+    event.target.classList.contains("menu__link") ||
+    event.target.classList.contains("menu__item"))
+) {
   toggleMenu();
 }});
 
@@ -21,4 +26,12 @@ function toggleMenu(){
   });
   menu.classList.toggle("hide");
 }
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;
+  if (scrollTop>200){
+    backBtn.classList.remove("hide");
+  } else {
+    backBtn.classList.add("hide");
 
+  }
+});

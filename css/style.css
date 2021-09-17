@@ -332,17 +332,17 @@ pre code {
 .footer__wrapper {
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.rsschool-logo {
+.social {
   height: 37px;
   width: 100px;
   margin: 20px 0;
 }
 
-.rsschool-logo img {
+.social img {
   max-width: 100%;
   height: auto;
 }
