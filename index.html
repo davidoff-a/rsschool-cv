@@ -25,6 +25,7 @@
       </div>
       <div class="menu-wrapper">
         <div class="cv-name">Davydau Aliaksei</div>
+        <div class="cv-position">Junior WEB-developer</div>
         <nav class="nav">
           <ul class="nav-menu menu">
             <li class="menu__item"><a href="#about">About</a></li>
@@ -34,12 +35,13 @@
             <li class="menu__item"><a href="#lang">Languages</a></li>
             <li class="menu__item"><a href="#contacts">Contacts</a></li>
           </ul>
+          <div class="layer"></div>
         </nav>
       </div>
       <div class="burger hide">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="line close" id="up"></div>
+        <div class="line close" id="mid"></div>
+        <div class="line close" id="down"></div>
       </div>
     </header>
     <div class="content-wrapper">
@@ -47,7 +49,7 @@
         <div class="cv-photo">
           <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo">
         </div>
-        <section class="about">
+        <section class="about" id="about">
           <h2>About</h2>
           <div class="about__text">
             Life is short. So I want to try so many thing as I can.
@@ -55,7 +57,7 @@
             deals. I dream to become a part of Something really big
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2>Contacts</h2>
           <div class="contacts__content">
             <ul class="contacts__list">
@@ -68,7 +70,7 @@
             </ul>
           </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
           <h2>Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">
@@ -103,7 +105,7 @@
             </li>
           </ul>
         </section>
-        <section class="lang">
+        <section class="lang" id="lang">
           <h2 class="lang">Languages</h2>
           <ul class="lang__list">
             <li class="lang__item">
@@ -135,105 +137,119 @@
             </li>
           </ul>
         </section>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/jfCwBzYRBTM" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="video-player"></iframe>
+        </div>
       </aside>
       <main class="main block">
-        <section class="exp">
+        <section class="exp" id="exp">
           <h2>Experience</h2>
-          <ol>
-            <li>
+          <ol class="exp__list">
+            <li class="exp__item">
+              <a href="https://app.rs.school/certificate/i8wdu89i"
+                >JS/FE PRE-SCHOOL (JAVASCRIPT)
+                2021</a>
+            </li>
+            <li class="exp__item">
               <a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/"
-                class="dark_link">Udemy
+                >Udemy
                 Web-developer
                 2021</a>
             </li>
-            <li>
-              <a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/"
-                class="dark_link">Udemy
-                Web-developer
-                2021</a>
+            <li class="exp__item">
+              <a href="https://www.sololearn.com/Certificate/1023-1454521/jpg/" >SoloLearn CSS3</a>
             </li>
-            <li>
-              <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
+            <li class="exp__item">
+              <a href="https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png" >SoloLearn JavaScript</a>
             </li>
-            <li>
-              <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
-            </li>
-            <li>
-              <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" class="dark_link">SoloLearn HTML</a>
+            <li class="exp__item">
+              <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg" >SoloLearn HTML5</a>
             </li>
           </ol>
         </section>
-        <section class="example">
+        <section class="example" id="sample">
           <h2>Sample of my JS code</h2>
-<pre>
-<code class="javascript">
-    "use strict";
-    const tabsContent = document.querySelectorAll(".tabcontent"),
-    tabs = document.querySelectorAll("tabheader__item"),
-    tabsParent = document.querySelector(".tabheader__items");
-    
-    function hideTabContent() {
-      tabsContent.forEach((item) => {
-      item.style.display = "display: none";
-    });
-    
-    tabs.forEach((item) => {
-        item.classList.contains("tabheader__item-active").remove();
+<div class="my-code">
+  <pre>
+  <code class="hljs">
+      "use strict";
+      const tabsContent = document.querySelectorAll(".tabcontent"),
+      tabs = document.querySelectorAll("tabheader__item"),
+      tabsParent = document.querySelector(".tabheader__items");
+      
+      function hideTabContent() {
+        tabsContent.forEach((item) => {
+        item.style.display = "display: none";
       });
-    }
-</code>
-</pre>
+      
+      tabs.forEach((item) => {
+          item.classList.contains("tabheader__item-active").remove();
+        });
+      }
+  </code>
+  </pre>
+</div>
         </section>
-        <section class="edu">
+        <section class="edu" id="edu">
           <h2>Education</h2>
-          <ul>
+          <ul class="edu__list">
             <li class="edu__item">
-              2021 <br>
+              <span>2021</span> <br>
               JS/FE PRE-SCHOOL (JAVASCRIPT) <br>
               <a href="https://rs.school/">rs.school</a>
             </li>
             <li class="edu__item">
-              2021 <br>
+              <span>2021</span> <br>
               CSS <br>
               <a href="SoloLearn.com">SoloLearn.com</a>
             </li>
             <li class="edu__item">
-              2021 <br>
+              <span>2021</span> <br>
               JavaScript <br>
               <a href="SoloLearn.com">SoloLearn.com</a>
             </li>
             <li class="edu__item">
-              2021 <br>
+              <span>2021</span> 
               WEB-developer 2021 <br>
               <a href="udemy.com">Udemy.com</a>
             </li>
             <li class="edu__item">
-              2020 <br>
+              <span>2020</span> 
               HTML <br>
               <a href="SoloLearn.com">SoloLearn.com</a>
             </li>
             <li class="edu__item">
-              2007 <br>
+              <span>2007</span> 
               Software ingeneer <br>
               RIIT BNTU
             </li>
             <li class="edu__item">
-              2007 <br>
+              <span>2007</span> 
               Computer science teacher <br>
               <a href="https://barsu.by/">BarSU</a>
             </li>
             <li class="edu__item">
-              1999-2004 <br>
+              <span>1999-2004</span> 
               Economist <br>
               <a href="http://www.bntu.by/">BNTU</a>
             </li>
           </ul>
-        </section>
+          </section>
 
       </main>
     </div>
-    <!-- 
-    <footer class="footer block">I'm footer</footer> -->
+    
+    <footer class="footer block">
+      <div class="footer__wrapper">
+        <div class="rsschool-logo">
+          <a href="https://rs.school/js/">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool">
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <!-- and it's easy to individually load additional languages -->
