@@ -4,7 +4,7 @@ const burger = document.querySelector(".burger");
 const lines = document.querySelectorAll(".line");
 const menu = document.querySelector(".layer");
 const menuLines = document.querySelectorAll(".menu__item");
-
+const backBtn = document.querySelector(".back");
 
 burger.addEventListener("click", ()=>{
   toggleMenu();
@@ -21,3 +21,4 @@ function toggleMenu(){
   });
   menu.classList.toggle("hide");
 }
+
