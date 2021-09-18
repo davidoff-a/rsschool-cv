@@ -108,7 +108,7 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 }
-  .nav {
+.nav {
   position: absolute;
   top: 260px;
   right: 13%;
@@ -116,7 +116,7 @@ body {
   padding: 15px;
   background-color: rgba(196, 196, 196, 1);
   border-radius: 5px;
-  z-index:1050;
+  z-index: 1050;
 }
 .nav-menu {
   display: flex;
@@ -146,9 +146,6 @@ body {
 
   transition: all 0.6s;
 }
-
-
-
 
 .burger {
   position: relative;
@@ -312,15 +309,44 @@ pre code {
   white-space: pre-wrap;
   word-break: break-all;
 }
-
 .exp__item,
 .edu__item {
+  
   margin: 15px 0;
   line-height: 150%;
+  
 }
 
 .edu__item span {
   font-weight: bold;
+}
+.project__card {
+  width: 100%;
+  max-height: 500px;
+}
+
+.project__card:not(:first-child){
+  padding-top: 25px;
+}
+
+.project__name {
+  font-size: 22px;
+  font-family: Montserrat;
+}
+
+.project__descr {
+  font-size: 18px;
+  line-height: 140%;
+}
+.project__screenshot {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.project__img {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -346,19 +372,19 @@ pre code {
   max-width: 100%;
   height: auto;
 }
-.back{
+.back {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-color: rgba(196,196,196,0.6);
+  background-color: rgba(196, 196, 196, 0.6);
   position: fixed;
   bottom: 70px;
   right: 70px;
 }
-.back:hover{
-  cursor:pointer;
+.back:hover {
+  cursor: pointer;
 }
-.back img{
+.back img {
   width: 100%;
   height: auto;
 }
@@ -428,6 +454,6 @@ pre code {
   }
 }
 
-.hide{
+.hide {
   display: none;
 }
