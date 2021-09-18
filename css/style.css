@@ -2,7 +2,9 @@
   font-family: "Calibri Regular", sans-serif;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 ul {
   list-style-type: none;
 }
