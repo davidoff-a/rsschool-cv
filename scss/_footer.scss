@@ -1,0 +1,45 @@
+.footer {
+  flex: 0 0 auto;
+  margin: 10px 15px;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.social {
+  height: 37px;
+  width: 100px;
+  margin: 20px 0;
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.back:hover {
+  cursor: pointer;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.back {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgba(196, 196, 196, 0.6);
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  &:hover {
+    cursor: pointer;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+

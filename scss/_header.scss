@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 104px;
+  margin: 10px 15px;
+  &__logo {
+    position: relative;
+    flex: 0 0 15%;
+    padding: 15px;
+    min-width: 250px;
+  }
+}
+.block {
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 5px;
+}
+.logo {
+  &__wrapper {
+    position: absolute;
+    top: 55px;
+    left: 120px;
+    text-align: right;
+  }
+  &__logo {
+    text-align: center;
+    font-size: 96px;
+    font-weight: 900;
+    font-family: Montserrat;
+    letter-spacing: -15px;
+    color: rgba(112, 168, 134, 0.8);
+    text-shadow: -5px 5px 10px rgba(56, 56, 56, 0.6);
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    text-shadow: -5px 5px 5px rgba(56, 56, 56, 0.6);
+  }
+}
+
+.menu__wrapper {
+  flex: 1 1 85%;
+}
+.cv__name {
+  font-size: 72px;
+  font-family: Montserrat;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cv__position {
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+}
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  position: absolute;
+  top: 260px;
+  right: 13%;
+  width: 30%;
+  padding: 15px;
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 5px;
+  z-index: 1050;
+}
+.nav__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+.menu {
+  &__item {
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 24px;
+    line-height: 142%;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    &:hover {
+      background-color: rgba(64, 113, 247, 0.6);
+      transition: all 0.6s;
+    }
+  }
+
+}
+.burger {
+  position: relative;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__line {
+    transform-origin: 50%, 50%;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+  }
+}
+
+#up.close {
+  position: absolute;
+  top: 50%;
+  /* transform-origin: 50%, 50%; */
+  transform: rotateZ(45deg);
+}
+
+#down.close {
+  position: absolute;
+  top: 50%;
+  transform: rotateZ(-45deg);
+}
+
+#mid.close {
+  display: none;
+}

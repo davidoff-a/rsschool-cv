@@ -16,16 +16,16 @@
 <body>
   <div class="content">
     <header class="header block">
-      <div class="header-logo logo">
+      <div class="header__logo logo">
         <div class="logo__logo" id="home">CV</div>
-        <div class="logo-wrapper">
-          <div class="logo__text logo__text_upper">urriculum</div>
-          <div class="logo__text logo__text_lower">itae</div>
+        <div class="logo__wrapper">
+          <div class="logo__text">urriculum</div>
+          <div class="logo__text">itae</div>
         </div>
       </div>
       <div class="menu-wrapper">
-        <h1 class="cv-name">Davydau Aliaksei</h1>
-        <div class="cv-position">Junior WEB-developer</div>
+        <h1 class="cv__name">Davydau Aliaksei</h1>
+        <div class="cv__position">Junior WEB-developer</div>
         <div class="layer hide">
           <nav class="nav">
             <ul class="nav-menu menu">
@@ -37,79 +37,95 @@
               <li class="menu__item"><a href="#lang" class="menu__link">Languages</a></li>
               <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
             </ul>
-
           </nav>
         </div>
-
       </div>
       <div class="burger">
-        <div class="line" id="up"></div>
-        <div class="line" id="mid"></div>
-        <div class="line" id="down"></div>
+        <div class="burger__line" id="up"></div>
+        <div class="burger__line" id="mid"></div>
+        <div class="burger__line" id="down"></div>
       </div>
     </header>
     <div class="content-wrapper">
-      <aside class="sidebar block">
-        <div class="cv-photo">
-          <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo">
-        </div>
-        <section class="about" id="about">
+      <main class="main block">
+      
+        <section class="about block" id="about">
           <h2>About</h2>
-          <div class="about__text">
-            Life is short. So I want to try so many thing as I can.
-            Programming is one of them. Because I see it like a Star Gate to the new World of Opportunities and GREAT
-            deals. I dream to become a part of Something really big
+          <div class="about__wrapper">
+            <div class="about__photo block">
+              <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo">
+            </div>
+            <div class="about__text block">
+              Life is short. So I want to try so many thing as I can.
+              Programming is one of them. Because I see it like a Star Gate to the new World of Opportunities and GREAT
+              deals. I dream to become a part of Something really HUGE.
+              </div>
           </div>
         </section>
-        <section class="contacts" id="contacts">
+        <section class="contacts block" id="contacts">
           <h2>Contacts</h2>
           <div class="contacts__content">
             <ul class="contacts__list">
-              <li class="contacts__item">Phone: 
+              <li class="contacts__item">
+                <img src="./assets/svg/contacts/mdi_call.svg" alt="Phone">
+                Phone:
                 <a href="callto:375293472556">+375 (29) 347 25 56</a>
               </li>
-              <li class="contacts__item">Email: <a
+              <li class="contacts__item"> <img src="./assets/svg/contacts/mdi_mail.svg" alt="Email"> Email: <a
                   href="mailto:davidoff.aleksei@gmail.com">davidoff.aleksei@gmail.com</a></li>
-              <li class="contacts__item">Skype: <a href="skype:pastor_ni">pastor_ni</a></li>
+              <li class="contacts__item"> <img src="./assets/img/contacts/skype.svg" alt="skype"> Skype: <a
+                  href="skype:pastor_ni">pastor_ni</a></li>
             </ul>
           </div>
         </section>
-        <section class="skills" id="skills">
+        <section class="skills block" id="skills">
           <h2>Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">
-              <div class="skills__name">HTML5</div>
+              <div class="skills__name">
+                <img src="./assets/svg/skills/HTML 5.svg" alt="HTML">
+                HTML5
+              </div>
               <div class="skills__box">
                 <div class="skills__progress" id="HTML"></div>
               </div>
             </li>
             <li class="skills__item">
-              <div class="skills__name">CSS3</div>
+              <div class="skills__name">
+                <img src="./assets/svg/skills/css3.svg" alt="CSS"> CSS3
+              </div>
               <div class="skills__box">
                 <div class="skills__progress" id="CSS"></div>
               </div>
             </li>
             <li class="skills__item">
-              <div class="skills__name">JavaScript</div>
+              <div class="skills__name">
+                <img src="./assets/svg/skills/javascript.svg" alt="JavaScript"> JavaScript
+              </div>
               <div class="skills__box">
                 <div class="skills__progress" id="JS"></div>
               </div>
             </li>
             <li class="skills__item">
-              <div class="skills__name">GIT</div>
+              <div class="skills__name">
+                <img src="./assets/svg/skills/git.svg" alt="git"> GIT
+              </div>
               <div class="skills__box">
                 <div class="skills__progress" id="GIT"></div>
               </div>
             </li>
             <li class="skills__item">
-              <div class="skills__name">TypeScript</div>
+              <div class="skills__name">
+                <img src="./assets/svg/skills/typescript-icon.svg" alt="TypeSript">
+                TypeScript
+              </div>
               <div class="skills__box">
                 <div class="skills__progress" id="TS"></div>
               </div>
             </li>
           </ul>
         </section>
-        <section class="lang" id="lang">
+        <section class="lang block" id="lang">
           <h2 class="lang">Languages</h2>
           <ul class="lang__list">
             <li class="lang__item">
@@ -146,9 +162,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen class="video-player"></iframe>
         </div>
-      </aside>
-      <main class="main block">
-        <section class="exp" id="exp">
+        <section class="exp block" id="exp">
           <h2>Experience</h2>
           <ol class="exp__list">
             <li class="exp__item">
@@ -172,7 +186,7 @@
             </li>
           </ol>
         </section>
-        <section class="example" id="sample">
+        <section class="example block" id="sample">
           <h2>Sample of my JS code</h2>
           <div class="my-code">
             <pre>
@@ -195,11 +209,12 @@
   </pre>
           </div>
         </section>
-        <section class="myProjects" id="projects">
+        <section class="myProjects block" id="projects">
           <h2>My recent Projects</h2>
           <div class="project__card">
             <h3 class="project__name">Virtual Piano</h3>
-            <div class="project__descr">One of my learning projects for piano lovers.Press on keys and listen :). <br> Used technologies: HTML, CSS, JS</div>
+            <div class="project__descr">One of my learning projects for piano lovers.Press on keys and listen :). <br>
+              Used technologies: HTML, CSS, JS</div>
             <div class="project__screenshot">
               <a href="https://rolling-scopes-school.github.io/davidoff-a-JSFE2021Q1/virtual-piano/
 ">
@@ -209,7 +224,8 @@
           </div>
           <div class="project__card">
             <h3 class="project__name">Photo Filter</h3>
-            <div class="project__descr">Another one learning project for those who loves photos :) . <br> Used technologies: HTML, CSS, JS</div>
+            <div class="project__descr">Another one learning project for those who loves photos :) . <br> Used
+              technologies: HTML, CSS, JS</div>
             <div class="project__screenshot">
               <a href="https://rolling-scopes-school.github.io/davidoff-a-JSFE2021Q1/photo-filter/">
                 <img src="./assets/img/projects/pf.png" alt="Photo Filter" class="project__img">
@@ -218,7 +234,9 @@
           </div>
           <div class="project__card">
             <h3 class="project__name">Pulse</h3>
-            <div class="project__descr">Another one my learning project: something like Match-Match game written using TypeScript, ESlint and Webpack. It's a pitty, but this project haven't finished yet. Used technologies: HTML, CSS, JS, TypeScript, ESlint, Webpack</div>
+            <div class="project__descr">Another one my learning project: something like Match-Match game written using
+              TypeScript, ESlint and Webpack. It's a pitty, but this project haven't finished yet. Used technologies:
+              HTML, CSS, JS, TypeScript, ESlint, Webpack</div>
             <div class="project__screenshot">
               <a href="https://ecstatic-almeida-055f6e.netlify.app/">
                 <img src="./assets/img/projects/match.png" alt="online store pulse" class="project__img">
@@ -226,7 +244,7 @@
             </div>
           </div>
         </section>
-        <section class="edu" id="edu">
+        <section class="edu block" id="edu">
           <h2>Education</h2>
           <ul class="edu__list">
             <li class="edu__item">

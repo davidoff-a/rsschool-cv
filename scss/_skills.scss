@@ -1,0 +1,64 @@
+.skills {
+
+  width: 100%;
+  margin-top: 25px;
+  min-height: 150px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &:nth-child(2n+1){
+      margin-right: 20px;
+    }
+    
+  }
+
+  &__item {
+    
+    margin-bottom: 12px;
+    flex: 0 1 50%;
+    
+    
+
+    & img {
+      width: 30px;
+      height: 25px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  &__name {
+    height: 30px;
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  &__box {
+    width: 90%;
+    height: 6px;
+    margin-top: 8px;
+    background-color: rgba(196, 196, 196, 0.8);
+  }
+
+  &__progress {
+    height: 100%;
+    background-color: rgb(29, 40, 194);
+  }
+}
+#HTML {
+  width: 90%;
+}
+#CSS {
+  width: 85%;
+}
+#JS {
+  width: 75%;
+}
+#GIT {
+  width: 45%;
+}
+#TS {
+  width: 30%;
+}
