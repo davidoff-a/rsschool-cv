@@ -1,0 +1,27 @@
+.about {
+  &__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+    &__photo {
+      flex: 0 1 800px;
+      margin-right: 20px;
+      
+      & img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    &__text {
+      padding: 15px;
+      line-height: 135%;
+      font-size: 22px;
+      flex: stretch;
+    }
+}
+.photo {
+}
