@@ -2,7 +2,8 @@
   margin-top: 25px;
     &__content {
       width: 100%;
-      min-height: 100px;
+      min-height: 60px;
+      font-size: 22px;
     }
 
     &__list {
@@ -14,7 +15,23 @@
     }
 
     &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      & img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        display: inline-block;
+        &::before{
+          content: "";
+          width: 25px;
+          height: 25px;
+          // background-color: radial-gradient();
+
+        }
+      }
     }
-}
-.block {
 }

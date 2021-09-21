@@ -323,7 +323,8 @@ body {
 
 .contacts__content {
   width: 100%;
-  min-height: 100px;
+  min-height: 60px;
+  font-size: 22px;
 }
 
 .contacts__list {
@@ -337,6 +338,103 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.contacts__item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.contacts__item img::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+}
+
+.skills {
+  margin-top: 25px;
+  min-height: 150px;
+}
+
+.skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__item {
+  margin-bottom: 12px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.skills__item img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skills__name {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.skills__box {
+  width: 80%;
+  height: 6px;
+  margin-top: 8px;
+  background-color: rgba(196, 196, 196, 0.8);
+}
+
+.skills__progress {
+  height: 100%;
+  background-color: #1d28c2;
+}
+
+#HTML {
+  width: 90%;
+}
+
+#CSS {
+  width: 85%;
+}
+
+#JS {
+  width: 75%;
+}
+
+#GIT {
+  width: 45%;
+}
+
+#TS {
+  width: 30%;
 }
 
 .footer {
