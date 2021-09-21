@@ -20,9 +20,27 @@
 }
 .back:hover {
   cursor: pointer;
-  &  img {
-  width: 100%;
-  height: auto;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
+.back {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgba(196, 196, 196, 0.6);
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  &:hover {
+    cursor: pointer;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+.hide {
 }

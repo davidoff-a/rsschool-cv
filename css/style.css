@@ -317,6 +317,28 @@ body {
           flex: 1 1 60%;
 }
 
+.contacts {
+  margin-top: 25px;
+}
+
+.contacts__content {
+  width: 100%;
+  min-height: 100px;
+}
+
+.contacts__list {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -352,6 +374,25 @@ body {
 }
 
 .back:hover img {
+  width: 100%;
+  height: auto;
+}
+
+.back {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgba(196, 196, 196, 0.6);
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.back img {
   width: 100%;
   height: auto;
 }
