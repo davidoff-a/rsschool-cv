@@ -11,6 +11,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
 
     }
 
@@ -19,6 +20,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
+      line-height: 140%;
 
       & img{
         width: 20px;

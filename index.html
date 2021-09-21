@@ -23,43 +23,46 @@
           <div class="logo__text">itae</div>
         </div>
       </div>
-      <div class="menu-wrapper">
+      <div class="header__wrapper">
         <h1 class="cv__name">Davydau Aliaksei</h1>
         <div class="cv__position">Junior WEB-developer</div>
-        <div class="layer hide">
-          <nav class="nav">
-            <ul class="nav-menu menu">
-              <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-              <li class="menu__item"><a href="#exp" class="menu__link">Experience</a></li>
-              <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-              <li class="menu__item"><a href="#projects" class="menu__link">My projects</a></li>
-              <li class="menu__item"><a href="#edu" class="menu__link">Education</a></li>
-              <li class="menu__item"><a href="#lang" class="menu__link">Languages</a></li>
-              <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
       </div>
       <div class="burger">
         <div class="burger__line" id="up"></div>
         <div class="burger__line" id="mid"></div>
         <div class="burger__line" id="down"></div>
       </div>
+      <div class="layer hide">
+        <nav class="nav">
+          <ul class="nav-menu menu">
+            <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#exp" class="menu__link">Experience</a></li>
+            <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+            <li class="menu__item"><a href="#projects" class="menu__link">My projects</a></li>
+            <li class="menu__item"><a href="#edu" class="menu__link">Education</a></li>
+            <li class="menu__item"><a href="#lang" class="menu__link">Languages</a></li>
+            <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="content-wrapper">
+    <div class="content__wrapper">
       <main class="main block">
-      
+
         <section class="about block" id="about">
           <h2>About</h2>
           <div class="about__wrapper">
             <div class="about__photo block">
-              <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo">
+              <figure>
+                <img src="./assets/img/photo.jpg" alt="candidate photo" class="photo">
+                <figcaption>HI, there! It's me!</figcaption>
+                </figure>
             </div>
             <div class="about__text block">
               Life is short. So I want to try so many thing as I can.
               Programming is one of them. Because I see it like a Star Gate to the new World of Opportunities and GREAT
               deals. I dream to become a part of Something really HUGE.
-              </div>
+            </div>
           </div>
         </section>
         <section class="contacts block" id="contacts">
@@ -157,34 +160,62 @@
             </li>
           </ul>
         </section>
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/jfCwBzYRBTM" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen class="video-player"></iframe>
+        <div class="video block">
+          <h2>Self presentation</h2>
+          <div class="video__wrapper">
+            <iframe src="https://www.youtube.com/embed/jfCwBzYRBTM" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen class="video__player"></iframe>
+          </div>
         </div>
         <section class="exp block" id="exp">
           <h2>Experience</h2>
-          <ol class="exp__list">
+          <ul class="exp__list">
             <li class="exp__item">
-              <a href="https://app.rs.school/certificate/i8wdu89i">JS/FE PRE-SCHOOL (JAVASCRIPT)
-                2021</a>
+              <div class="exp__logo"><a href="https://app.rs.school/certificate/i8wdu89i">
+                  <img src="./assets/svg/exp/RSSchool.svg" alt="Rolling Scopes School">
+                </a></div>
+              <div class="exp__descr">
+                <a href="https://app.rs.school/certificate/i8wdu89i">
+                  JS/FE PRE-SCHOOL (JAVASCRIPT)
+                  2021</a>
+              </div>
             </li>
             <li class="exp__item">
-              <a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/">Udemy
-                Web-developer
-                2021</a>
+              <div class="exp__logo"><a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/">
+                  <img src="./assets/svg/exp/udemy-icon.svg" alt="Udemy"></a></div>
+              <div class="exp__descr">
+                <a href="https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/"> <br>
+                  Udemy
+                  Web-developer
+                  2021</a>
+              </div>
             </li>
             <li class="exp__item">
-              <a href="https://www.sololearn.com/Certificate/1023-1454521/jpg/">SoloLearn CSS3</a>
+              <div class="exp__logo"><a href="https://www.sololearn.com/Certificate/1023-1454521/jpg/">
+                  <img src="./assets/svg/exp/sololearn.svg" alt="SoloLearn"></a></div>
+              <div class="exp__descr">
+                <a href="https://www.sololearn.com/Certificate/1023-1454521/jpg/">
+                  SoloLearn CSS3</a>
+              </div>
+              </li>
+              <li class="exp__item">
+                <div class="exp__logo"><a href="https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png">
+                    <img src="./assets/svg/exp/sololearn.svg" alt="SoloLearn"></a></div>
+                <div class="exp__descr">
+                  <a href="https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png">
+                    SoloLearn JavaScript</a>
+                </div>
+                </li>
+                <li class="exp__item">
+                <div class="exp__logo"><a href="https://www.sololearn.com/Certificate/1014-1454521/jpg/">
+                    <img src="./assets/svg/exp/sololearn.svg" alt="SoloLearn"></a></div>
+                <div class="exp__descr">
+                  <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg/">
+                    SoloLearn HTML</a>
+                </div>
             </li>
-            <li class="exp__item">
-              <a href="https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png">SoloLearn
-                JavaScript</a>
-            </li>
-            <li class="exp__item">
-              <a href="https://www.sololearn.com/Certificate/1014-1454521/jpg">SoloLearn HTML5</a>
-            </li>
-          </ol>
+            </ul>
         </section>
         <section class="example block" id="sample">
           <h2>Sample of my JS code</h2>
@@ -209,7 +240,7 @@
   </pre>
           </div>
         </section>
-        <section class="myProjects block" id="projects">
+        <section class="projects block" id="projects">
           <h2>My recent Projects</h2>
           <div class="project__card">
             <h3 class="project__name">Virtual Piano</h3>
@@ -268,22 +299,22 @@
               <a href="udemy.com">Udemy.com</a>
             </li>
             <li class="edu__item">
-              <span>2020</span>
+              <span>2020</span><br>
               HTML <br>
               <a href="SoloLearn.com">SoloLearn.com</a>
             </li>
             <li class="edu__item">
-              <span>2007</span>
+              <span>2007</span><br>
               Software ingeneer <br>
               RIIT BNTU
             </li>
             <li class="edu__item">
-              <span>2007</span>
+              <span>2007</span><br>
               Computer science teacher <br>
               <a href="https://barsu.by/">BarSU</a>
             </li>
             <li class="edu__item">
-              <span>1999-2004</span>
+              <span>1999-2004</span><br>
               Economist <br>
               <a href="http://www.bntu.by/">BNTU</a>
             </li>
