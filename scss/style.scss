@@ -21,9 +21,20 @@ pre {
   padding: 0;
 }
 h2{
+  position: relative;
+  margin: 20px 10px 35px 10px;
   font-size: 32px;
-  margin: 20px 10px;
   text-shadow: 7px 7px 10px #c4c4c4;
+  
+  &:before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background-color: #040404;
+}
 }
 a {
   color: black;
@@ -62,6 +73,7 @@ body {
 
 @import "_header";
 @import "_about";
+@import "_contacts";
 
 @import "_footer";
 .hide {

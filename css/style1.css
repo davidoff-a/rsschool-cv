@@ -226,15 +226,7 @@ h2 {
   position: relative;
 }
 
-h2::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 45px;
-  height: 3px;
-  background-color: #040404;
-}
+
 
 .contacts__item,
 .skills__item,
