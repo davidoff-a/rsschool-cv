@@ -368,6 +368,7 @@ body {
 }
 
 .skills {
+  width: 100%;
   margin-top: 25px;
   min-height: 150px;
 }
@@ -386,6 +387,10 @@ body {
       flex-wrap: wrap;
 }
 
+.skills__list:nth-child(2n+1) {
+  margin-right: 20px;
+}
+
 .skills__item {
   margin-bottom: 12px;
   -webkit-box-flex: 0;
@@ -395,18 +400,19 @@ body {
 
 .skills__item img {
   width: 30px;
-  height: 30px;
+  height: 25px;
   display: inline-block;
   margin-right: 10px;
 }
 
 .skills__name {
+  height: 30px;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 140%;
 }
 
 .skills__box {
-  width: 80%;
+  width: 90%;
   height: 6px;
   margin-top: 8px;
   background-color: rgba(196, 196, 196, 0.8);
@@ -435,6 +441,67 @@ body {
 
 #TS {
   width: 30%;
+}
+
+.lang {
+  width: 100%;
+  margin-top: 25px;
+  min-height: 35px;
+}
+
+.lang__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lang__list:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.lang__item {
+  margin-bottom: 12px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.lang__name {
+  height: 30px;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+.lang__box {
+  width: 90%;
+  height: 6px;
+  margin-top: 8px;
+  background-color: rgba(196, 196, 196, 0.8);
+}
+
+.lang__progress {
+  height: 100%;
+  background-color: #1d28c2;
+}
+
+#eng {
+  width: 40%;
+}
+
+#rus {
+  width: 90%;
+}
+
+#by {
+  width: 85%;
 }
 
 .footer {

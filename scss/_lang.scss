@@ -1,32 +1,20 @@
-.skills {
-
+.lang {
   width: 100%;
   margin-top: 25px;
-  min-height: 150px;
+  min-height: 35px;
   &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    &:nth-child(2n+1){
+    &:nth-child(2n + 1) {
       margin-right: 20px;
     }
-    
   }
 
   &__item {
-    
     margin-bottom: 12px;
     flex: 0 1 50%;
-    
-    
-
-    & img {
-      width: 30px;
-      height: 25px;
-      display: inline-block;
-      margin-right: 10px;
-    }
   }
 
   &__name {
@@ -47,18 +35,13 @@
     background-color: rgb(29, 40, 194);
   }
 }
-#HTML {
+#eng {
+  width: 40%;
+}
+#rus {
   width: 90%;
 }
-#CSS {
+#by {
   width: 85%;
 }
-#JS {
-  width: 75%;
-}
-#GIT {
-  width: 45%;
-}
-#TS {
-  width: 30%;
-}
+
