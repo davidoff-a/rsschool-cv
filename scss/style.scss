@@ -16,6 +16,7 @@ h4,
 h5,
 h6,
 ul,
+ol,
 pre {
   margin: 0;
   padding: 0;
@@ -76,6 +77,10 @@ body {
 @import "_contacts";
 @import "_skills";
 @import "_lang";
+@import "_video";
+@import "_exp";
+@import "_example";
+@import "_projects";
 
 @import "_footer";
 .hide {
