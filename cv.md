@@ -20,11 +20,11 @@
 | **_Skype:_**   | _pastor_ni_                  |
 | **_Mobile:_**  | _+375293472556_              |
 | **_Telegram_** | _+375293472556_              |
+| **_Discord_**  | _Aleksei(davidoff-a)#8819_   |
 
 ## 3. ABOUT:
 
 > I like different chalenges. I like programming. So, I'm student in RS SCHOOL.
-
 ## 4. SKILLS:
 
 - HTML5
@@ -81,7 +81,7 @@ export interface IComponent {
 | **Online courses:**                                                                    |           |                                                                                                                               |
 | SoloLearn.com                                                                          |   2020    | [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |
 | Udemy.com                                                                              |   2021    | [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/) |
-| SoloLearn.com                                                                          |   2021    | [SoloLearn HTML](SoloLearn.com                                                                          |   2020    | [SoloLearn Javascript](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |)                                                      |
+| SoloLearn.com                                                                          |   2021    | [SoloLearn HTML](SoloLearn.com                                                                                                | 2020 | [SoloLearn Javascript](https://www.sololearn.com/Certificate/1014-1454521/jpg) | ) |
 
 ## 8. LANGUAGE:
 
