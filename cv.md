@@ -40,24 +40,33 @@
 ## 5. EXAMPLE for CODE:
 
 ```
-'use strict';
-	const tabsContent = document.querySelectorAll('.tabcontent'),
-		tabs = document.querySelectorAll('tabheader__item'),
-		tabsParent = document.querySelector('.tabheader__items');
-	function hideTabContent() {
-		tabsContent.forEach((item) => {
-			item.style.display = 'display: none';
-		});
-		tabs.forEach((item) => {
-			item.classList.contains('tabheader__item-active').remove();
-		});
-	}
+export class Component implements IComponent{
+  selector: string;
+  template: string;
+  constructor(config:IComponent){
+    this.selector = config.selector;
+    this.template = config.template;
+  }
+  render():void{
+    const pageComponent = document.querySelector(this.selector);
+    if(this.selector && pageComponent){
+      pageComponent.innerHTML = this.template;
+    }
+  }
+}
+
+export interface IComponent {
+  selector: string,
+  template: string,
+}
+
 ```
 
 ## 6. EXPIRIENCE:
 
 - [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)
 - [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/)
+- [SoloLearn Javascript](https://www.sololearn.com/certificates/course/en/1454521/1024/landscape/png)
 
 ## 7. EDUCATION HIGHLIGHTS:
 
@@ -71,6 +80,7 @@
 | **Online courses:**                                                                    |           |                                                                                                                               |
 | SoloLearn.com                                                                          |   2020    | [SoloLearn HTML](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |
 | Udemy.com                                                                              |   2021    | [Udemy Web-developer 2021 (WEB-разработчик 2021)](https://www.udemy.com/certificate/UC-ecabe547-5f24-4ce6-9151-622a8b818168/) |
+| SoloLearn.com                                                                          |   2021    | [SoloLearn HTML](SoloLearn.com                                                                          |   2020    | [SoloLearn Javascript](https://www.sololearn.com/Certificate/1014-1454521/jpg)                                                      |)                                                      |
 
 ## 8. LANGUAGE:
 
