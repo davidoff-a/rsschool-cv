@@ -1,4 +1,4 @@
-- [ALIAKSEI DAVIDAU](#aliaksei-davidau)
+  - [1. ALIAKSEI DAVIDAU](#aliaksei-davidau)
   - [2. CONTACTS:](#2-contacts)
   - [3. ABOUT:](#3-about)
   - [4. SKILLS:](#4-skills)
@@ -23,8 +23,7 @@
 
 ## 3. ABOUT:
 
-> Life is short. I want to do a lot of things.  
-> Programming is one of them.
+> I like different chalenges. I like programming. So, I'm student in RS SCHOOL.
 
 ## 4. SKILLS:
 
