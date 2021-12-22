@@ -1,3 +1,13 @@
+- [ALIAKSEI DAVIDAU](#aliaksei-davidau)
+  - [2. CONTACTS:](#2-contacts)
+  - [3. ABOUT:](#3-about)
+  - [4. SKILLS:](#4-skills)
+  - [5. EXAMPLE for CODE:](#5-example-for-code)
+  - [6. EXPIRIENCE:](#6-expirience)
+  - [7. EDUCATION HIGHLIGHTS:](#7-education-highlights)
+  - [8. LANGUAGE:](#8-language)
+
+
 ## 1. NAME
 
 # ALIAKSEI DAVIDAU
@@ -22,7 +32,10 @@
 - CSS3
 - SCSS/SASS
 - Javascript
+- TypeScript
 - GIT
+- WebPack
+- ESLint
 
 ## 5. EXAMPLE for CODE:
 
