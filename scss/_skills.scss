@@ -1,5 +1,4 @@
 .skills {
-
   width: 100%;
   margin-top: 25px;
   min-height: 150px;
@@ -8,18 +7,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    &:nth-child(2n+1){
+    &:nth-child(2n + 1) {
       margin-right: 20px;
     }
-    
   }
 
   &__item {
-    
     margin-bottom: 12px;
     flex: 0 1 50%;
-    
-    
 
     & img {
       width: 30px;
