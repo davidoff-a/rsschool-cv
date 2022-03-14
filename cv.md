@@ -26,6 +26,7 @@
 - [x] - HTML5
 - [x] - CSS3
 - [x] - SCSS/SASS
+- [x] - BEM
 - [x] - Javascript 
 - [x] - TypeScript
 - [x] - Webpack
