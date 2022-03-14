@@ -31,6 +31,7 @@
 - [x] - TypeScript
 - [x] - Webpack
 - [x] - GIT
+- [x] - I'm awsome and I'm COOL! :)
 
 ## 5. EXAMPLE for CODE:
 
