@@ -1,0 +1,29 @@
+.exp {
+  margin-top: 25px;
+
+    &__list {
+      margin-left: 20px;
+    }
+
+    &__item {
+      margin: 15px 0;
+      height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 22px;
+      line-height: 140%;
+      &__logo{
+        width: 100px;
+      }
+      // & a{
+      //   display: inline-block;
+      // }
+      & img{
+        height: 30px;
+        width: auto;
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+}
