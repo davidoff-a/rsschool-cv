@@ -112,11 +112,6 @@ body {
     width: 40%;
   }
   .nav__menu {
-    /* display:none; */
-    /*   
-  justify-content: space-around;
-  align-items: center;
-  width: 100%; */
     flex-wrap: nowrap;
   }
   .menu__item {
@@ -131,9 +126,7 @@ body {
   .content__wrapper {
     flex-direction: column;
   }
-  // .block {
-  //   background-color: rgba(196, 196, 196, 0);
-  // }
+  
 }
 @media (max-width: 720px) {
   .header {
@@ -154,8 +147,7 @@ body {
     top: 36%;
   }
   .burger{
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 15px auto 0;
   }
   .about__wrapper{
     flex-direction: column;
@@ -185,6 +177,30 @@ body {
   .nav {
     width: 80%;
     top: 45%;
+  }
+  .skills{
+    &__list{
+      width: 100%;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      &:nth-child(2n + 1) {
+        margin-right: 0;
+      }
+    }
+    &__item{
+      width: 100%;
+    }
+  }
+  
+  .lang{
+    &__list{
+      width: 100%;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    &__item{
+      width: 100%;
+    }
   }
 }
 
