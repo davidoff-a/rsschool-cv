@@ -360,6 +360,18 @@ body {
   width: 30%;
 }
 
+#REACT {
+  width: 23%;
+}
+
+#SCSS {
+  width: 67%;
+}
+
+#SB {
+  width: 12%;
+}
+
 .lang {
   width: 100%;
   margin-top: 25px;
